@@ -1,0 +1,166 @@
+
+
+
+footer {
+  background-color: #A76545;
+  padding: 64px 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-website-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 32px;
+}
+
+.footer-brand-contact {
+  flex: 1;
+  min-width: 200px;
+}
+
+.brand-logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+.footer-line {
+  height: 2px;
+  background-color: white;
+  border: none;
+  width: 120px;
+  margin: 10px 0;
+}
+
+.footer-contact {
+  color: white;
+  font-size: 1rem;
+}
+
+.links {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+}
+
+.links h3 {
+  color: white;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+  border-radius: 8px;
+  width: 150px;
+}
+
+.links a:hover {
+  background-color: #ffffff55;
+  padding-left: 12px;
+}
+
+.chat-box-section {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-label {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.chat-box {
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.send-button {
+  width: 50%; /* Ensure it stretches full width */
+  padding: 12px 0;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+
+.send-button:hover {
+  background-color: #388e3c;
+  transform: scale(1.03);
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.icons a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.icons a:hover {
+  background-color: #ffffff33;
+  transform: translateY(-5px);
+}
+
+.icons i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+#footer-copyright p,
+#footer-copyright span {
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .footer-website-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .chat-box-section {
+    width: 100%;
+    align-items: center;
+  }
+
+  .chat-box {
+    width: 100%;
+  }
+}

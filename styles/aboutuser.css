@@ -1,0 +1,163 @@
+/* Reset & center */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #D0B8A8;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid layout */
+.form-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  grid-template-rows: auto auto auto;
+  gap: 24px 36px;
+  width: 950px;
+  max-width: 95vw;
+  box-sizing: border-box;
+}
+
+/* Card styles */
+.card {
+  background: #f7e9df;
+  border-radius: 20px;
+  padding: 26px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Grid area placement */
+.left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+.right-top {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.right-bottom {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.confirm-btn {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  align-self: center;
+  justify-self: center;
+  background: #f7e9df;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 14px 28px;
+  font-size: 14px;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  background-color: #a86b4c;
+}
+
+/* Typography */
+.title {
+  color: #a86b4c;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.title.small {
+  font-size: 18px;
+}
+
+.desc {
+  font-size: 13px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+/* Form layout */
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+input, select {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #e5d9cc;
+  font-size: 14px;
+}
+
+/* Goal tags */
+.goal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.goal {
+  padding: 6px 12px;
+  background: #cbb7a1;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.goal.active {
+  background: #a76545;
+  color: #fff;
+}
+
+
+/* BMI visual zones */
+.bmi-bar {
+  display: flex;
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.bmi-zone {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.underweight { background: #dbab83; }
+.normal { background: #b4d49b; }
+.overweight { background: #f2e475; color: #000; }
+.obese { background: #e87e7e; }
+
+/* BMI result display */
+.bmi-result {
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.bmi-feedback {
+  font-size: 13px;
+  padding: 8px;
+  background: #f6f6f6;
+  border-radius: 6px;
+  border-left: 6px solid;
+}
+
+.bmi-feedback.red { border-color: red; color: red; }
+.bmi-feedback.yellow { border-color: #f1c40f; color: #b38b00; }
+.bmi-feedback.green { border-color: green; color: green; }

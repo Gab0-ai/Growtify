@@ -1,0 +1,143 @@
+/* Overall profile container */
+.main-container {
+  max-width: 800px;
+  margin: 0rem auto 3rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Heading style */
+.main-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #a76545; /* Updated heading color */
+}
+
+/* Profile form styles */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Box container for form sections */
+.credentials-box,
+.personal-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+/* Section headings */
+.credentials-box h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Form labels */
+.profile-form label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input fields */
+.profile-form input,
+.profile-form select {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+/* Read-only style for disabled fields */
+.profile-form input[disabled],
+.profile-form select[disabled] {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/* Goal tags style */
+.goal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.goal {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.goal.selected {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Form buttons styling */
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.edit-btn,
+.save-btn {
+  max-width: 200px;
+  width: 100%;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 0.65rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn:hover,
+.save-btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.save-btn:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+/* Success message */
+.text-green-600 {
+  color: #4caf50;
+}
+
+/* Optional spacing for labels or error text */
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Fix header position: no sticky, normal flow */
+.profile-header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}

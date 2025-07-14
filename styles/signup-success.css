@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #c0b6ac;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Center container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Signup success card */
+.success-box {
+  position: relative;
+  width: 861px;
+  height: 814px;
+  background: #F8EDE3;
+  border-radius: 70px;
+  overflow: hidden;
+}
+
+/* Top rounded background */
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 58.97%;
+  background: #A76545;
+  border-radius: 51px;
+}
+
+/* Mid rectangle accent */
+.rectangle-mid {
+  position: absolute;
+  top: 29.24%;
+  left: 0;
+  right: 0;
+  bottom: 58.97%;
+  background: #A76545;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  height: 243px;
+  left: 36.93%;
+  right: 35.54%;
+  top: 12px;
+  background: url('/assets/images/check.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* SUCCESS heading */
+.success-text {
+  position: absolute;
+  left: 31.59%;
+  right: 31.48%;
+  top: 26.66%;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* Confirmation message */
+.message-text {
+  position: absolute;
+  left: 4.88%;
+  right: 4.76%;
+  top: 53.07%;
+  font-family: 'Schibsted Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #A76545;
+}
+
+/* Button */
+.continue-button {
+  position: absolute;
+  left: 35.54%;
+  right: 35.54%;
+  top: 77.27%;
+  bottom: 12.53%;
+  background: #A76545;
+  border-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button text */
+.continue-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+  text-align: center;
+}

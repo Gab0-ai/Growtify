@@ -1,0 +1,434 @@
+/* Reset & Base */
+/* General Reset */
+
+
+.container, .wrapper {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+nav {
+  margin: 0;
+  padding: 0;
+}
+.cta-section {
+  padding-top: 0; /* or a small value if needed */
+}
+
+.brand-logo {
+  vertical-align: middle;
+  width: 40px;
+  height: auto;
+  margin-right: 5px; /* small space between logo and name */
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 1.7rem;
+  vertical-align: middle;
+}
+
+.brand-icon {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 0px; /* space between icon and "Growtify" text */
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf8f3;
+  color: #333;
+}
+
+/* Shared Styles */
+section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #2f2f2f;
+}
+
+.brand {
+  color: #00b86b;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: #00b86b;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #009a5c;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  min-height: 100vh; /* Use min-height for flexibility */
+  background-color: #F8EDE3;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin: 0;            /* Ensure no margin collapses */
+  position: relative;
+}
+
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.hero-images {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.03);
+}
+
+.hero-text {
+  flex: 1 1 45%;
+  max-width: 600px;
+  text-align: left;
+  
+}
+
+.hero-text h1 {
+  font-size: 4rem; /* Bigger for better visual balance */
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #2e2e2e;
+}
+
+.hero-text p {
+  font-size: 1.5rem; /* Increase for visual impact */
+  line-height: 1.7;
+  color: #555555;
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 2.2rem;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cta:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .hero {
+    height: auto; /* Let it size naturally on small screens */
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* WHY GROWTIFY SECTION */
+.why-growtify {
+  width: 100%;
+  background-color: #A76545;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  font-family: 'Baloo 2', cursive; /* Apply bubbly font */
+}
+
+.why-growtify h2 {
+  font-size: 3rem; /* Increased size */
+  margin-bottom: 1.5rem;
+  color: white;
+  font-weight: 700;
+}
+
+.why-growtify p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.why-growtify .brand {
+  color: #00b86b !important;
+  font-weight: 700;
+}
+
+/* Benefit Cards */
+.benefits {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.benefit-card {
+  position: relative;
+  width: 360px;
+  height: 320px;
+  background-color: #D0B8A8;
+  border-radius: 16px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.benefit-card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2d2d2d; /* You can change this to white if needed */
+}
+
+/* Hover text inside card */
+.hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #7f320c;
+  color: white;
+  padding: 15px;
+  font-size: 0.95rem;
+  border-radius: 0 0 16px 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.benefit-card:hover .hover-text {
+  opacity: 1;
+}
+
+
+
+
+/* ========== PROGRESS SECTION ========== */
+
+/* PROGRESS SECTION */
+.progress-section {
+  width: 100%;
+  background-color: #F8EDE3;
+  padding: 5rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.progress-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.section-title {
+  font-size: 3rem;
+  color: #2e7d4f;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.section-description {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress-image {
+  width: 100%;
+  max-height: 480px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.progress-image:hover {
+  transform: scale(1.015);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1.05rem;
+  }
+
+  .progress-image {
+    max-height: 320px;
+    border-radius: 12px;
+  }
+}
+
+
+/* CTA SECTION: image fills bottom 50%, solid color on top 50% */
+.cta-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F8EDE3;
+  background-image: url('../assets/images/runninghalf.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+/* Removed overlay for full image opacity */
+.cta-section::before {
+  display: none;
+}
+
+/* CTA Container */
+.cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.75); /* optional semi-transparent bg */
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Slogan text */
+.cta-text h2 {
+  font-size: 2.5rem;
+  color: #2e7d4f;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Button container - separates it visually */
+.cta-button-wrapper {
+  margin-top: 20px;
+}
+
+/* CTA Button styles */
+.cta-text .btn {
+  padding: 18px 40px;
+  background-color: #A76545;
+  color: #fff;
+  border-radius: 999px; /* fully rounded */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  letter-spacing: 0.5px;
+}
+
+.cta-text .btn:hover {
+  background-color: #944d31;
+  transform: translateY(-3px);
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 60px 20px;
+    min-height: auto;
+    align-items: center;
+  }
+
+  .cta-text h2 {
+    font-size: 2rem;
+  }
+
+  .cta-text .btn {
+    font-size: 0.95rem;
+  }
+}
+

@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F8EDE3;
+}
+
+/* Signup Container */
+.signup-container {
+  max-width: 962px;
+  width: 90%;
+  background: #F8EDE3;
+  border-radius: 20px;
+  margin: 60px auto;
+  padding: 60px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.signup-title {
+  font-family: 'Schibsted Grotesk', sans-serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  color: #A76545;
+  text-align: center;
+  text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+/* Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.signup-form label {
+  font-family: 'Rowdies', sans-serif;
+  font-size: 18px;
+  color: #A76545;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form input[type="email"] {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 16px;
+  background: #DFD3C3;
+}
+
+/* Checkbox */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+.terms-green {
+  font-family: 'Rowdies', sans-serif;
+  font-weight: 700;
+  color: #00BF63;
+}
+
+/* Signup Button */
+.signup-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #A76545;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 32px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #8f5435;
+}
+
+/* Already have account link */
+.already-account {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Back Button */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #A76545;
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 999;
+}
+
+.back-button:hover {
+  background-color: #8f5435;
+  transform: scale(1.05);
+}
+
+.back-button i {
+  font-size: 16px;
+}

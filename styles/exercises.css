@@ -1,0 +1,111 @@
+
+.brand-logo {
+  vertical-align: middle;
+  width: 40px;
+  height: auto;
+  margin-right: 5px; /* small space between logo and name */
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 1.7rem;
+  vertical-align: middle;
+}
+
+.brand-icon {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 0px; /* space between icon and "Growtify" text */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #D0B8A8;
+  color: #333;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.page-title {
+  text-align: center;
+  text-transform: capitalize;
+}
+.exercises {
+  display: grid;
+  justify-content: center;
+}
+.day-wrapper {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.content {
+  width: 100%;
+}
+.day-title {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 16px 0;
+}
+.exercise-btn {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.025em;
+  box-shadow: var(--primary-color-extra-light);
+  z-index: 10;
+}
+.exercise-btn:hover {
+  color: var(--black);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.exercise-btn:active {
+  color: var(--black);
+  transform: translateY(20%);
+}
+.active {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+button {
+  color: var(--primary-color);
+  width: 25px;
+  padding: 20px;
+}
+.video-wrapper {
+  width: 100%;
+  height: 0;
+  transform: translateY(-20%);
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.show-video {
+  width: 100%;
+  height: 300px;
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 100;
+}
+.day-wrapper .video-wrapper video {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,27 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  transition: all 150ms ease-in-out;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+}
+h1,
+h2 {
+  letter-spacing: -0.025em;
+}
+hr {
+  width: 100%;
+  opacity: 30%;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,88 @@
+/* MOBILE FIRST APPROACH! */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+  header .brand-logo {
+    display: block;
+  }
+  header .brand-name {
+    display: none;
+  }
+  .exercises {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+  header nav a {
+    width: 150px;
+  }
+  .exercises {
+    grid-template-columns: repeat(1, 500px);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  header .brand-logo {
+    display: none;
+  }
+  header .brand-name {
+    display: block;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .exercises {
+    grid-template-columns: repeat(2, 500px);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+  .exercises {
+    grid-template-columns: repeat(3, 500px);
+  }
+}
+
+/* 3xl */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+  .exercises {
+    grid-template-columns: repeat(3, 500px);
+  }
+}
